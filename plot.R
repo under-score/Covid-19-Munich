@@ -8,7 +8,7 @@ packages <-c("ggplot2","openxlsx","ggrepel","dplyr","tidyverse","lubridate")
 ipak(packages)
 
 # contact database
-fn <- c("/Users/wjst/Documents/Daten/Paper/CoronaBayern/Muenchen/plot.xlsx")
+fn <- c("plot.xlsx")
 events <- 
   read.xlsx(fn, startRow = 1, colNames = TRUE, rowNames = FALSE, detectDates = TRUE, skipEmptyRows = TRUE, skipEmptyCols = TRUE, rows = NULL, cols = NULL, check.names = FALSE) %>%
   mutate( dt = yday(dt) ) %>%
