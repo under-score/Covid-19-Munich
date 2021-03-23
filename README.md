@@ -1,4 +1,4 @@
-# Covid-19-in-Munich
+# Covid-19-Munich
 plot function of transmission tree 
 
 R rewrite of the figure in 
